@@ -27,7 +27,7 @@ myBtn.style.cssText =
   position: absolute;
   top: 50%;left: 50% ; cursor: pointer;
   border: 1px solid #ddd; border-radius:6px;
-  padding : 4px 10px`;
+  padding : 10px 14px`;
 
 
 myBtn.addEventListener("click", createRandomColor);
