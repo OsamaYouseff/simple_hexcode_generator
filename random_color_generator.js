@@ -17,17 +17,15 @@ function createRandomColor() {
   }
   randomHexCode = `#${randomArrayHexCode.join("")}`;
   myP.innerText = `The HexCode For This Color Is : ${randomHexCode}`;
-  document.body.style.cssText = ` background-color :${randomHexCode} ; display:grid; place-items : center `;
+  document.body.style.cssText = `transition : 0.6s;  background-color :${randomHexCode} ; display:grid; place-items : center `;
 }
 document.body.appendChild(myP);
 
-myBtn.style.cssText =
-  `display: grid;place-items: center;
+myBtn.style.cssText = `display: grid;place-items: center;
   transform: translate(-50%,-50%);
   position: absolute;
   top: 50%;left: 50% ; cursor: pointer;
   border: 1px solid #ddd; border-radius:6px;
   padding : 10px 14px`;
-
 
 myBtn.addEventListener("click", createRandomColor);
