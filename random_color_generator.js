@@ -16,7 +16,7 @@ function createRandomColor() {
     );
   }
   randomHexCode = `#${randomArrayHexCode.join("")}`;
-  myP.innerText = `The Random HexCode For This Is : ${randomHexCode}`;
+  myP.innerText = `The HexCode For This Color Is : ${randomHexCode}`;
   document.body.style.cssText = ` background-color :${randomHexCode} ; display:grid; place-items : center `;
 }
 document.body.appendChild(myP);
